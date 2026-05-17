@@ -1,0 +1,193 @@
+/* ===== RESET GENERAL ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== BODY ===== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111827;
+    color: #f9fafb;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background: linear-gradient(135deg, #111827, #1f2937);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 4px solid #ff4d6d;
+}
+
+header h1{
+    color: #ff4d6d;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p{
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+/* ===== CONTENIDO ===== */
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+/* ===== IMAGEN DEL JUEGO ===== */
+
+main img{
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+
+    border: 3px solid #ff4d6d;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(255, 77, 109, 0.25);
+}
+
+/* ===== CAJAS DE INFORMACIÓN ===== */
+
+.info{
+    background-color: #1f2937;
+    padding: 24px;
+    margin-top: 22px;
+
+    border-left: 5px solid #ff4d6d;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.info h2{
+    color: #ff4d6d;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.info p{
+    color: #e5e7eb;
+    margin-bottom: 10px;
+}
+
+.info strong{
+    color: #ffffff;
+}
+
+/* ===== BOTONES ===== */
+
+.volver{
+    display: inline-block;
+    background-color: #ff4d6d;
+    color: white;
+
+    padding: 11px 18px;
+    margin-top: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.volver:hover{
+    background-color: #e63956;
+    transform: translateY(-3px);
+}
+
+/* ===== NAVEGACIÓN INFERIOR ===== */
+
+main nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align: center;
+    padding: 24px 15px;
+    background-color: #1f2937;
+    margin-top: 40px;
+    border-top: 4px solid #ff4d6d;
+}
+
+footer p{
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 700px){
+
+    header{
+        padding: 35px 15px;
+    }
+
+    header h1{
+        font-size: 32px;
+    }
+
+    header p{
+        font-size: 15px;
+    }
+
+    main{
+        padding: 25px 15px;
+    }
+
+    main img{
+        width: 230px;
+    }
+
+    .info{
+        padding: 18px;
+    }
+
+    .info h2{
+        font-size: 23px;
+    }
+
+    main nav{
+        flex-direction: column;
+    }
+
+    .volver{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+    header h1{
+        font-size: 28px;
+    }
+
+    main img{
+        width: 200px;
+    }
+
+    .info{
+        padding: 16px;
+    }
+}
